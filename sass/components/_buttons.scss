@@ -1,0 +1,40 @@
+.btn-rounded {
+  position: relative;
+  @include flex-center;
+  gap: 0.8rem;
+  padding: 0.4rem 0.4rem .4rem 1rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: all 0.2s ;
+  background-color: $white;
+
+  @include media-breakpoint-down(md) {
+    padding: 0.2rem 0.2rem 0.2rem 0.6rem;
+    font-size: .8rem
+  }
+
+  .icon {
+      @include flex-center;
+      width: 36px;
+      height: 36px;
+      background-color: $primary;
+      color: $white;
+      border-radius: 50%;
+      transition: all 0.2s ;
+
+      @include media-breakpoint-down(md) {
+        width: 26px;
+        height: 26px;
+      }
+  }
+
+  &:hover {
+    @include gradient;
+    color: $white;
+    border-color: rgba($white, 0.5);
+
+    .icon {
+        background-color: rgba(0,0,0,.6);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.menu {
+  @include gradient;
+
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
+  }  
+  
+  li {
+    
+    padding: 0 0.7rem;
+    transition: background-color .3s, padding .3s;
+
+  
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+      
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($white, 0.2);
+      }
+      &:hover {
+        background-color: rgba($white, 0.2);
+        padding-left: 1rem;
+      }
+    }
+
+    .nav-link {
+      color: rgba($white, 0.55);
+      font-weight: 500;
+
+      &:hover,
+      &:focus {
+        color: rgba($white, 0.75);
+      }
+
+      &.active,
+      &.show {
+        color: $white;
+      }
+    }
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .btn-rounded {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+  }
+}

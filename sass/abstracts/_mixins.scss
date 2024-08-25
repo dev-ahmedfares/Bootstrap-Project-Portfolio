@@ -1,0 +1,24 @@
+// Gradient
+
+@mixin gradient {
+    background-image: linear-gradient(to right,rgba($primary, 0.95),rgba($secondary, 0.95));
+}
+
+// Flex 
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+}

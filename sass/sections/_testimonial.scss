@@ -1,0 +1,34 @@
+.testimonial {
+  @include gradient;
+
+  .card {
+    background-color: rgba($white, 0.8);
+    padding: 2rem 1.3rem;
+    p {
+      i {
+        font-size: 1.5rem;
+        color: $primary;
+      }
+    }
+
+    .stars {
+        padding-bottom: 1.5rem;
+    }
+  }
+
+  .thumbnail {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      border: 0.325rem solid $primary;
+    }
+  }
+
+  .name {
+    margin: 4rem 0 2rem;
+  }
+}
